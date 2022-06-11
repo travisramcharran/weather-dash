@@ -41,7 +41,7 @@ function currentWeather(userInput) {
         var lat = response.coord.lat;
         var lon = response.coord.lon;
         var icon = response.weather[0].icon;
-        var UVindexURL = "https://api.openweathermap.org/data/2.5/uvi?" + "lat=" + lat + "&" + "lon=" + lon + "&APPID=123babda3bc150d180af748af99ad173";
+        var UVindexURL = "https://api.openweathermap.org/data/2.5/uvi?" + "lat=" + lat + "&" + "lon=" + lon + "&APPID=116874deccfcd0cfe13aa1a901258d99";
         var newImgMain = $("<img>").attr("class", "card-img-top").attr("src", "https://openweathermap.org/img/wn/" + icon + "@2x.png");
         mainIcon.append(newImgMain);
         cityResultText.text(cityInfo + ", " + country + " " + today);
@@ -76,7 +76,7 @@ function forecast (userInput) {
     dayForecast.empty();
     rowCards.empty();
     var fore5 = $("<h2>").attr("class", "forecast").text("5-Day Forecast: "); 
-    var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&units=metric&APPID=123babda3bc150d180af748af99ad173";
+    var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + userInput + "&units=metric&APPID=116874deccfcd0cfe13aa1a901258d99";
     $.ajax({
         url: forecastURL,
         method: "GET"
