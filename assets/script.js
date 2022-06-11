@@ -1,3 +1,7 @@
+var forecastDate = {};
+var forecastIcon = {};
+var forecastTemp = {};
+var forecastHum = {};
 var cityResultText = $("#cityResult");
 var tempResultText = $("#tempResult");
 var humidityResult = $("#humidityResult");
@@ -8,12 +12,8 @@ var dayForecast = $("#row5day");
 var cardDisplay = $("#cardDisplay");
 var UVIndexText = $("#UVIndexResult");
 var buttonList = $("#buttonsList");
-var forecastDate = {};
-var forecastIcon = {};
-var forecastTemp = {};
-var forecastHum = {};
 var today = moment().format('DD' + "/" + 'MM' + '/' + 'YYYY');
-var APIKey = "&units=metric&APPID=123babda3bc150d180af748af99ad173";
+var APIKey = "&units=metric&APPID=116874deccfcd0cfe13aa1a901258d99";
 var url =  "https://api.openweathermap.org/data/2.5/weather?q=";
 var citiesArray = JSON.parse(localStorage.getItem("Saved City")) || [];
 
