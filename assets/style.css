@@ -1,5 +1,5 @@
 a {
-    color: white !important;
+    color: red !important;
     font-size: 30px;
     text-decoration: none !important;
 }
@@ -16,45 +16,42 @@ a {
 }
 
 .form-inline {
-    padding-left: 20px;
-    padding-bottom: 20px;
+    
+    padding-bottom: 19px;
 }
 
 #lastSearch {
-    padding-left: 35px;
+    padding-left: 20px;
     
 }
 
 #weatherCard {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
+
+
 #row5day {
-    padding-bottom: 20px;
+    padding-bottom: 21px;
 }
+
+
 
 #rowCards {
     justify-content: center;
 }
 
+
+
 #cardDisplay {
     display: none;
 }
 
-#buttonsList {
-    /* display: none; */
-}
+
 
 .container-fluid {
     padding-bottom: 70px;
 }
 
-/* .col-sm-4 {
-    background-color: #e6f2ff;
-} */
 
-footer {
-    text-align: center;
-    clear: both;
-}
